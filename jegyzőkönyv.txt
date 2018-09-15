@@ -1,0 +1,15 @@
+TODO: megírni ezt a jegyzőkönyvet DOCBOOK-ként
+
+Első hét feladatai:
+- OO szemlélet:
+  Fájlok: PolarGenerator.java, PolarGenerator.class, PolarGenerator.cpp, PolarGeneratorCPP.run
+  
+  Java kód forrása a https://arato.inf.unideb.hu/batfai.norbert/UDPROG/deprecated/Prog1_5.pdf diájából
+  Java kód kikommentelve (kód megértésének demonstrálására)
+  Kód átültetve C++-ba - változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban)
+- Yoda:
+  Fájlok: Yoda.java, Yoda.class
+  
+  A kód bekér egy stringet. Amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja.
+  A stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában - amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna.
+- From Scratch: (folyamatban)
