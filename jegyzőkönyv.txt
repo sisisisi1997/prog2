@@ -5,7 +5,7 @@ Első hét feladatai:
   Fájlok: PolarGenerator.java, PolarGenerator.class, PolarGenerator.cpp, PolarGeneratorCPP.run
   
   Java kód forrása a https://arato.inf.unideb.hu/batfai.norbert/UDPROG/deprecated/Prog1_5.pdf diájából
-  Java kód kikommentelve (kód megértésének demonstrálására)
+  Java kód kommentelve (kód megértésének demonstrálására)
   Kód átültetve C++-ba - változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban)
 - Yoda:
   Fájlok: Yoda.java, Yoda.class
@@ -18,3 +18,11 @@ Első hét feladatai:
   Működés: A kód bekér egy indulópozíciót és egy hosszot, majd kiírja az indulópozíció + 1-től kezdve hosszon keresztül a pi hexadecimális jegyeit.
   Hibajavítás: A használt algoritmus helyessége függ a floating point arithmetic pontosságától a használt gépen, így a kiszámolt összes jegy helyett csak az első 4-et használja fel.
   Ennyi mindig helyesnek bizonyult, és a 32/64 bit váltakozáson kívül (talán ezzel együtt is, TODO: utánanézni) a JVM konzisztensen adja meg a típusok pontosságát.
+- homokozó
+  Fájlok: LZW_servlet.java
+  
+  Állapot: servlet alap kódja megírva. LZW binfa kódja folyamatban.
+- gagyi
+  Fájlok: gagyi.java
+  
+  Állapot: használt osztály létrehozva, Integer.java tanulmányozása folyamatban
