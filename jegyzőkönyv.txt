@@ -1,6 +1,6 @@
 TODO: megírni ezt a jegyzőkönyvet DOCBOOK-ként
 
-Első hét feladatai:
+Első hét:
 - OO szemlélet:
   Fájlok: PolarGenerator.java, PolarGenerator.class, PolarGenerator.cpp, PolarGeneratorCPP.run
   
@@ -23,6 +23,54 @@ Első hét feladatai:
   
   Állapot: servlet alap kódja megírva. LZW binfa kódja folyamatban.
 - gagyi
+  Elkezdve: 2018.09.19. (labor kezdete előtt)
   Fájlok: gagyi.java
   
   Állapot: használt osztály létrehozva, Integer.java tanulmányozása folyamatban
+- megjegyzés: a feladatok kezdésének és befejezésének dokumentálása 2018.09.19-én kezdődött, minden feladat aminél ez az adat nem szerepel, hamarabb lett elkezdve és/vagy befejezve.
+
+Második hét:
+- Liskov:
+  Elkezdve: 2018. 09.19. (labor kezdete után)
+  Fájlok:
+  - Liskov.java, Liskov.cpp: felhasználják a 'StringNumber' és 'ComplexStringNumber' osztályt oly módon, amely megmutatja az elv megsértését
+  - StringNumber.java: Egy olyan osztály, amely String reprezentációban kezel számokat.
+  - ComplexStringNumber.java: Egy olyan osztály, amely String reprezentációban kezel komplex számokat.
+  
+  Megoldás: A számok összehasonlítása 'nagyobb' és 'kisebb' voltukra egy olyan feladat, amely komplex számok esetén értelmét veszti.
+  
+  Állapot:
+  - 2018.09.18.: fájlok létrehozva, jegyzőkönyvbe felvezetve a feladat, implementáció elkezdve
+- Szülő-gyerek
+  Elkezdve: 2018.09.26., 09:07
+  Fájlok: Szulo.java, Gyerek.java, SZGYmain.java
+  
+  Megoldás: A Gyerek osztály felülírja a szülő osztály egy metódusát, valamint egy sajátot is definiál.
+            A fő osztályból
+			1) elkészítjük a gyerek osztály példányát egy Szülő típusú változóba
+			2) meghívjuk a felülírt metódust cast nélkül
+			3) meghívjuk a felülírt metódust casttal
+			4) megpróbáljuk meghívni az új metódust cast nélkül
+			5) meghívjuk az új metódust casttal
+  
+  Állapot:
+  - 2018.09.26.: fájlok létrehozva, jegyzőkönyvbe felvéve a feladat, implementációban hiba - okát megtalálni
+- Anti OO
+  Elkezdve: 2018.09.26. 09:31
+  Fájlok: BBPTimer.cpp
+  
+  Állapot:
+  - 2018.09.26.:
+    - az időmérő C++ verziójához fájlok létrehozva
+	- Az időmérő java verziójához fájlok létrehozva és implementáció elkezdve
+	- Előző hétről a BBP java implementáció átmásolva az eheti feladathoz
+- Hello, Android!
+  Elkezdve: 2018.09.26. 09:48
+  
+  Állapot:
+  - 2018.09.26.: Samu-Entropy leszedve githubról. Átnézés folyamatban.
+- Ciklomatikus komplexitás
+  Elkezdve: 2018.09.26. 09:51
+  
+  Állapot:
+  - 2018.09.26.: használt képlet a wikipédián talált lesz. Kiválasztott metódus elemzésre: helper.StringNumber.isGreaterThan() metódus, amely két szövegként eltárolt számról állapítja meg, hogy az első nagyobb-e a másodiknál
