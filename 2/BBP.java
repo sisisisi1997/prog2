@@ -14,7 +14,7 @@ public class BBP
 		System.out.println(ComputePiDigits(start, count));
 	}
 	
-	private static String ComputePiDigits(int d, int count)
+	public static String ComputePiDigits(int d, int count)
 	{
 		StringBuffer resultString = new StringBuffer();
 		

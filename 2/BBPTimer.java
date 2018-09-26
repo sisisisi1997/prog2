@@ -5,17 +5,17 @@ class BBPTimer
 {
 	public static void main(String[] args)
 	{
-		long first = measure(1000000);
-		long second = measure(10000000);
-		long third = meausre(100000000);
+		System.out.print("Java, 10^4 számjegy: ");
+		System.out.println(measure(10000));
+		//long second = measure(10000000);
+		//long third = meausre(100000000);
 	}
 	
 	public static long measure(int digits)
 	{
 		long startTime = System.nanoTime();
 		
-		// TODO: run the BBP algorithm here for the given number of digits
-		// we are not interested in the results, just the runtime
+		BBP.ComputePiDigits(0, digits);
 		
 		return System.nanoTime() - startTime;
 	}

@@ -57,13 +57,15 @@ Második hét:
   - 2018.09.26.: fájlok létrehozva, jegyzőkönyvbe felvéve a feladat, implementációban hiba - okát megtalálni
 - Anti OO
   Elkezdve: 2018.09.26. 09:31
-  Fájlok: BBPTimer.cpp
+  Fájlok: BBPTimer.cpp, BBPTimer.java
   
   Állapot:
   - 2018.09.26.:
     - az időmérő C++ verziójához fájlok létrehozva
 	- Az időmérő java verziójához fájlok létrehozva és implementáció elkezdve
 	- Előző hétről a BBP java implementáció átmásolva az eheti feladathoz
+	- megállapítás: az időmérő implementálása után kiderült, hogy a BBP feladatban használt algoritmus implementáció túl lassú időméréshez min. 10^6 számjegy esetén - optimalizáció szükséges
+	- megjegyzés: a különböző nyelvek között használt implementáció (logikailag) meg kell, hogy egyezzen ahhoz, hogy a mérés reprezentatív legyen arra nézve, hogy mi maga a futási sebesség közötti különbség
 - Hello, Android!
   Elkezdve: 2018.09.26. 09:48
   
