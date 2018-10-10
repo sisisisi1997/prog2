@@ -78,6 +78,53 @@ Második hét:
   - 2018.09.26.: használt képlet a wikipédián talált lesz. Kiválasztott metódus elemzésre: helper.StringNumber.isGreaterThan() metódus, amely két szövegként eltárolt számról állapítja meg, hogy az első nagyobb-e a másodiknál
 
 Harmadik hét: munkaeszköz meghibásodása miatt negyedik hét határidejéig pótolva
+- Forward UML
+  Elkezdve: 2018.10.09.
+  Befejezve: 2018.10.09.
+  Fájlok: forward.zargo, HeadPhone.h, HeadPhone.cpp, HeadPhoneManufacturer.h, HeadPhoneManufacturer.cpp
+  
+  Megoldás:
+   ArgoUML program segítségével készítettem két osztálydiagramot, amelyek leírják a HeadPhone és a HeadPhoneManufacturer osztályt.
+   Az osztályok tartalmaznak private elemeket, public gettereket ezekhez az elemekhez, és egy-egy konstruktort, melyeket az ArgoUML az osztálydiagramok alapján generált.
+  
+  Megjegyzés: a .zargo kiterjesztésű fájl az ArgoUML projekt fájlja.
+- BPMN
+  Elkezdve: 2018.10.09.
+  Befejezve: 2018.10.09.
+  Fájlok: bpmn.jpg, mely egy fotó a lerajzolt BPMN diagramról
+  
+  Megoldás:
+   BPMN diagram feladatmegoldásról programozás laborra, melynek elemei a következők:
+    Kezdőesemény: közeledik a feladatok beadási határideje
+    tevékenység: egy feladat elvégzése
+    útválasztó: Van még hátra feladat?
+    tevékenység: feladatok feltöltése githubra
+    befejező esemény: az óra során a feladatok bemutathatóak
+   Az elemek olvashatósági okokból vannak leírva a jegyzőkönyvbe, a köztük lévő kapcsolatok csak a bpmn.jpg-ben találhatóak meg.
+- esettan
+  Elkezdve: 2018.10.09.
+  
+  Fájlok: minden fájl a "ProductInventory" mappán belül
+  
+  Megoldás:
+   A "Szoftverfejlesztés C++ nyelven" című könyv 14. fejezetének elolvasása (UML diagramok, C++)
+   A "Szoftverfejlesztés C++ nyelven" című könyv 14. fejezetéből a kódrészletek lemásolása a megfelelő fájlokba és mappákba.
+   A kód kikommentelése annak érdekében, hogy biztosan megértsem mi hol mit csinál.
+   Változtatások elvégzése és a kód kiegészítése egy működőképes program elkészítése érdekében
+  
+  Állapot:
+   2018.10.09.: library rész közel a befejezéshez, test rész még nincs kész
+- BPEL
+  Elkezdve: 2018.10.09.
+  
+  Állapot: környezet felállítva, ismeretlen hiba miatt nem működik
+- reverse UML
+  Elkezdve: 2018.10.10. (labor előtt)
+  
+  Állapot:
+   2018.10.10.:
+    LZWBinfa megkeresve githubon, letöltve a 3. hét mappájába.
+	Importálás ArgoUML-el nem sikerült, a file->import sources menü alatti importáló eszköz exceptionnel záródott be.
 
 Negyedik hét:
 - Encoding
@@ -100,6 +147,21 @@ Negyedik hét:
     Végigmegyek minden szón, és ha az szerepel a szótranszformációs hashmapben, akkor kicserélem egyben.
     Azokon a szavakon, amelyek nem szerepeltek, betűnként megyek végig, és a betűtranszformációs hashmap segítségével kicserélem az érintett betűket egyesével.
 - OOCWC lexer
-  - elkezdve: 2018.10.03. laboron
-  - megoldás:
-    - 
+  elkezdve: 2018.10.03. laboron
+  
+  állapot:
+   carlexer.ll értelmezése folyamatban, látszólag egy XML vagy ahhoz hasonló formátumú adatokat tartalmazó fájlt olvas be egy C++ programba
+   
+  megoldás:
+- fullscreen
+  Elkezdve: 2018.10.10 (labor előtt)
+  Befejezve: 2018.10.10 (labor előtt)
+  
+  Megoldás:
+   olyan java program, amely elindul teljes képernyős módban, megjelenít egy üres ablakot, és billentyű lenyomására kilép
+   megoldás a labirintusjáték alapján
+- Perceptron
+  Elkezdve: 2018.10.10. (labor előtt)
+  Fájlok: nlp.hpp
+  
+  Állapot: Perceptron osztály kiszedve az eredeti projekt környezetéből és elmentve az nlp.hpp-be, cuda eltávolítva (eredeti projektbeli függőség volt)
