@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book xml:id="report_root" xmlns="http://docbook.org/ns/docbook" version="5.0">
+	<title>Jegyzőkönyv a Magas szintű programozási nyelvek 2 tárgy heti feladataihoz</title>
+	<chapter>
+		<title>Globális megjegyzések</title>
+		<para>Időpontok dokumentálása 2018.09.19-én kezdődött, ezelőtt nem találhatóak meg dátumok.</para>
+		<para>
+			A Jegyzőkönyv átvitele a txt fájlból ebbe az XML fájlba folyamatosan történik, amíg a txt fájl tartalma teljesen át nem kerül ide.
+			Ezen idő alatt mindkettő különböző befejezettségi állapotban lehet a feladatok feltöltésekor.
+		</para>
+	</chapter>
+	<chapter>
+		<title>1. hét</title>
+		<section>
+			<title>Feladat: OO szemlélet</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>PolarGenerator.java</para></listitem>
+							<listitem><para>PolarGenerator.class</para></listitem>
+							<listitem><para>PolarGenerator.cpp</para></listitem>
+							<listitem><para>PolarGeneratorCPP.run</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+						<itemizedlist>
+							<listitem><para>Java kód forrása a https://arato.inf.unideb.hu/batfai.norbert/UDPROG/deprecated/Prog1_5.pdf diájából</para></listitem>
+							<listitem><para>Java kód kommentelve (kód megértésének demonstrálására)</para></listitem>
+							<listitem><para>Kód átültetve C++-ba (változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban))</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Yoda</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>Yoda.java</para></listitem>
+							<listitem><para>Yoda.class</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: Java program, amely
+						<itemizedlist>
+							<listitem><para>bekér egy stringet</para></listitem>
+							<listitem><para>amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja</para></listitem>
+							<listitem><para>a stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában (amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna)</para></listitem>
+							<listitem><para></para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: From Scratch</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>BBP.java</para></listitem>
+							<listitem><para>BBP.class</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+						<itemizedlist>
+							<listitem><para>A kód bekér egy indulópozíciót és egy hosszot, majd kiírja az indulópozíció + 1-től kezdve hosszon keresztül a pi hexadecimális jegyeit</para></listitem>
+							<listitem>
+								<para>Hibajavítás: A használt algoritmus helyessége függ a floating point arithmetic pontosságától a használt gépen, így a kiszámolt összes jegy helyett csak az első 4-et használja fel.</para>
+								<para>Ennyi mindig helyesnek bizonyult, és a 32/64 bit váltakozáson kívül (talán ezzel együtt is, TODO: utánanézni) a JVM konzisztensen adja meg a típusok pontosságát.</para>
+							</listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: homokozó</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>LZW_servlet.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>servlet alap kódja megírva</para></listitem>
+							<listitem><para>LZW binfa kódja folyamatban</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: gagyi</title>
+			<itemizedlist>
+				<listitem><para>Elkezdve: 2018.09.19. (labor előtt)</para></listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>gagyi.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>használt osztály létrehozva</para></listitem>
+							<listitem><para>Integer.java tanulmányozása folyamatban</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
+	<chapter>
+		<title>5. hét</title>
+		<section>
+			<title>Feladat: JDK osztályok</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.17., labor előtt) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.17., labor előtt) boost linkelése a forrásfájllal sikertelen, keresés után: ABI verzió probléma van</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>JDKClasses.cpp</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Másoló-mozgató szemantika</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.16.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.17., labor előtt) copy és move assignment és ctor implementálva, hibajavításra szorul</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>MasolMozgat.cpp</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Hibásan implementált RSA törése</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.16.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.16.) RSA.java implementálva</para></listitem>
+							<listitem><para>(2018.10.16.) RSAToro.java - kódolás és dekódolás implementálva, törés maradt hátra</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>RSA.java: a kulcspárokat generáló osztály.</para></listitem>
+							<listitem><para>RSAToro.java: a szöveget titkosító, majd feltörő osztály.</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>Tutor: Nagy Márta</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Változó argumentumszámú ctor</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.17., labor előtt) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.17., labor előtt) valtarg.cpp a képfájl nevét bekéri</para></listitem>
+							<listitem><para>(2018.10.17., labor előtt) libpng++ library feltelepítve, hogy tudja kezelni a képeket, linkelés megvalósítása hátravan</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>nlp.hpp: a Perceptron osztály fájlja</para></listitem>
+							<listitem><para>valtarg.cpp: az fájl ami felhasználja a Perceptront</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Összefoglaló</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.17., labor előtt) Elkezdve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem>
+								<para>
+									Összefoglaló.docx: a feladatban megadott bemutató
+									(a "Másoló-mozgató szemantika" feladatról, elméletben és konkrét megvalósításban is)
+								</para>
+							</listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
+</book>
