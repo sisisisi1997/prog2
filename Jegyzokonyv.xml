@@ -258,4 +258,233 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<chapter>
+		<title>6. hét</title>
+		<section>
+			<title>Feladat: gengszterek rendezése</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.23.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.23.) Megoldva</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+					</para>
+					<para>
+						A kódrészlet a gengsztereket rendezi egy összehasonlító függvény alapján, ahol az összehasonlítás alapja a rendőrtől való távolság.
+						Ezt az std::sort egy tudja megtenni, hogy átvesz egy függvényt paraméterként, mely az összehasonlítást végzi.
+						Mivel csak szennyeznénk a használt scope-ot egy függvény nevesítésével erre a célra, az átadott függvény egy ún. lambda függvény, mely egy névtelen függvény.
+						Három részből áll, az első [] között van, és meghatározza, hogy a lambda függvény a körülötte lévő scope-ból mely változókhoz fér hozzá ("this" és "cop").
+						A második egy paraméterlista, amellyel meg kell hívni. Ez egy összehasonlító függvény esetén a két összehasonlítandó elem.
+						A harmadik a függvény teste, mely kiszámolja a visszatérési értéket, rendezéshez használt összehasonlító függvény esetén 0, ha egyenlőek,
+						pozitív ha az egyik elem "nagyobb", és negatív ha a másik elem "nagyobb" - ezen utóbbiak sorrendje implementációfüggő.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Custom Allocator</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.24., labor előtt) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.24., labor előtt) Linkelt előadás végigolvasva</para></listitem>
+							<listitem><para>(2018.10.24., labor előtt) Elakadás: mi pontosan a feladat?</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: STL map érték szerinti rendezése</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.23.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.23.) Leírás rész megcsinálva</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Leírás:
+					</para>
+					<para>
+						A map értékek szerinti rendezését a gengszterek rendezéséhez hasonlóan az std::sort és egy lambda függvény segítségével tesszük meg.
+						Ebben az esetben a [=] implicit "elkapja" a környező scope-ban lévő változókat érték szerint, paraméterként pedig két key-value pair-t kap meg.
+						A key-value paireket a ".second" tagjuk alapján hasonlítja össze, mely a value-nak felel meg, így kapunk érték szerinti rendezést.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Alternatív tabella rendezése</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.23.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.23.) Leírás rész megcsinálva</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Leírás:
+					</para>
+					<para>
+						A programban a Comparable&lt;T&gt; interface implementációja egy összehasonlító függvényt ad a rendezéshez két csapat között.
+						Ez több szempontban is különbözik az eddigi C++-os összehasonlítás-rendezésektől, például az összehasonlítást végző függvény nevesítve van;
+						az osztály példányának része ahelyett, hogy mindkét összehasonlítandó példányt paraméterként venné át; és mivel interface implementáció, már compile
+						időben biztosított, hogy a megfelelő paramétereket veszi át és a megfelelő típussal tér vissza - hiszen ha nem így lenne, nem is ezt az interface-t
+						implementálnánk, pedig a rendező függvény ilyen interface-t implementáló osztályokat vár bemenetnek.
+						Magának az összehasonlításnak az elvégzéséhez a C++-hoz hasonlóan negatív, 0, és pozitív értékeket használ, ezzel az összetett adattípusainkat egyszerű
+						egész számokká transzformálva, melyeket már tud rendezni a megadott rendezőalgoritmus.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Feladat: Összefoglaló</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.24., labor előtt) Elkezdve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>Összefoglaló.docx: a feladatban megadott bemutató, az alternatív tabellás feladat Comparable&lt;T&gt; interface-éről</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
+	<chapter>
+		<title>7. hét</title>
+		<section>
+			<title>1. feladat: FUTURE tevékenység editor</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.07.) Szükséges fájl leszedve githubról</para></listitem>
+						<listitem><para>(2018.11.07.) Java FX-et nem találja a rendszert, telepíteni kell.</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>ActivityEditor.java: a future tevékenység editor.</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>2. feladat: OOCWC Boost ASIO hálózatkezelése</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.07.) Megoldva</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+					</para>
+					<para>
+						Az std::sscanf függvény arra alkalmas, hogy egy stringből egy bizonyos formátum alapján nyerjen ki adatokat.
+						Minden egyes actionben ahol az sscanf jelen van, az éppen matchelt patternből változókba fogja kiolvasni az olyan adatokat, mint
+						név (init), pozíciók (pos), stb, ezzel jóval leegyszerűsítve az adott bemenetből olvasó scanner működését ahhoz képest,
+						mint ha kézzel kéne "darabolni" a stringeket.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: SamuCam</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.07.) Megoldva</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+					</para>
+					<para>
+						A VideoCapture konstruktora egy stringet fogad, amely lehet egy eszköz eléréséhez annak indexe (0, 1, ...).
+						Miután megnyitjuk a video streamet és beállítjuk a tulajdonságait (képméret, etc), frame-enként tudunk olvasni, feldolgozni,
+						majd ugorni a következő frame-re.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: BrainB</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.07.) Megoldva</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+					</para>
+					<para>
+						A Qt signals &amp; slots rendszere egy eseményekre (event) alapuló működést segít felépíteni, melyben az egyes objektumok tájékoztathatják
+						egymást bizonyos eseményekről, pl. egy változó értékének módosításáról.
+						Pl. a BrainB-ben mikor a BrainBThread draw() metódusa befejeződik, emit-el (kibocsájt) egy signalt, amit a BrainBWin fogad, és ennek megfelelően
+						tud cselekedni. Ehhez több dolog is szükséges. Mivel alapból a slotok és signal-ök nem tudnak egymásról (decoupling és encapsulation elvét betartva),
+						össze kell kötni őket a connect() metódussal, ami ebben az esetben a BrainBWin-ben van (mivel ő szeretne tájékozódni).
+						Ezen kívül a signal és a hozzá kapcsolt slot signature-je meg kell, hogy egyezzen, így a megfelelő adatokat tudja továbbítani a signal a slot felé.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>5. feladat: OSM térképre rajzolása (alternatíva elkészítése)</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.07.) GPS tracker elkezdve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>GpsTracker.java</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
 </book>
