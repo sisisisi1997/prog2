@@ -2,75 +2,122 @@
 <book xml:id="report_root" xmlns="http://docbook.org/ns/docbook" version="5.0">
 	<title>Jegyzőkönyv a Magas szintű programozási nyelvek 2 tárgy heti feladataihoz</title>
 	<chapter>
-		<title>Globális megjegyzések</title>
+		<title>Megjegyzések</title>
 		<para>Időpontok dokumentálása 2018.09.19-én kezdődött, ezelőtt nem találhatóak meg dátumok.</para>
 		<para>
 			A Jegyzőkönyv átvitele a txt fájlból ebbe az XML fájlba folyamatosan történik, amíg a txt fájl tartalma teljesen át nem kerül ide.
 			Ezen idő alatt mindkettő különböző befejezettségi állapotban lehet a feladatok feltöltésekor.
 		</para>
+		<para>a 3. héten a feladatok megoldásához használt laptop meghibásodott, így az akkori feladatok a 4. hetiek határidejéig lesznek pótolva</para>
 	</chapter>
 	<chapter>
 		<title>1. hét</title>
 		<section>
-			<title>Feladat: OO szemlélet</title>
+			<title>1. feladat: OO szemlélet</title>
 			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>Java kód forrása a https://arato.inf.unideb.hu/batfai.norbert/UDPROG/deprecated/Prog1_5.pdf diájából</para></listitem>
+							<listitem><para>Java kód kommentelve (kód megértésének demonstrálására)</para></listitem>
+							<listitem><para>Kód átültetve C++-ba (változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban))</para></listitem>
+							<listitem><para>Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
 				<listitem>
 					<para>
 						Fájlok:
 						<itemizedlist>
 							<listitem><para>PolarGenerator.java</para></listitem>
-							<listitem><para>PolarGenerator.class</para></listitem>
 							<listitem><para>PolarGenerator.cpp</para></listitem>
-							<listitem><para>PolarGeneratorCPP.run</para></listitem>
-						</itemizedlist>
-					</para>
-				</listitem>
-				<listitem>
-					<para>
-						Megoldás:
-						<itemizedlist>
-							<listitem><para>Java kód forrása a https://arato.inf.unideb.hu/batfai.norbert/UDPROG/deprecated/Prog1_5.pdf diájából</para></listitem>
-							<listitem><para>Java kód kommentelve (kód megértésének demonstrálására)</para></listitem>
-							<listitem><para>Kód átültetve C++-ba (változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban))</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Feladat: Yoda</title>
+			<title>2. feladat: homokozó</title>
 			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>servlet alap kódja megírva</para></listitem>
+							<listitem><para>LZW binfa kódja folyamatban</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>LZW_servlet.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: gagyi</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.09.19.) Elkezdve</para></listitem>
+							<listitem><para>használt osztály létrehozva</para></listitem>
+							<listitem><para>Integer.java tanulmányozása folyamatban</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>gagyi.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: Yoda</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot: befejezve, a megoldás egy Java program, amely
+						<itemizedlist>
+							<listitem><para>bekér egy stringet</para></listitem>
+							<listitem><para>amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja</para></listitem>
+							<listitem><para>a stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában (amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna)</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
 				<listitem>
 					<para>
 						Fájlok:
 						<itemizedlist>
 							<listitem><para>Yoda.java</para></listitem>
-							<listitem><para>Yoda.class</para></listitem>
-						</itemizedlist>
-					</para>
-				</listitem>
-				<listitem>
-					<para>
-						Megoldás: Java program, amely
-						<itemizedlist>
-							<listitem><para>bekér egy stringet</para></listitem>
-							<listitem><para>amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja</para></listitem>
-							<listitem><para>a stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában (amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna)</para></listitem>
-							<listitem><para></para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Feladat: From Scratch</title>
+			<title>5. feladat: From Scratch</title>
 			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot: befejezve
+					</para>
+				</listitem>
 				<listitem>
 					<para>
 						Fájlok:
 						<itemizedlist>
 							<listitem><para>BBP.java</para></listitem>
-							<listitem><para>BBP.class</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -88,50 +135,141 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+	</chapter>
+	<chapter>
+		<title>2. hét</title>
 		<section>
-			<title>Feladat: homokozó</title>
+			<title>1. feladat: Liskov helyettesítés sértése</title>
 			<itemizedlist>
 				<listitem>
 					<para>
-						Fájlok:
+						Állapot:
 						<itemizedlist>
-							<listitem><para>LZW_servlet.java</para></listitem>
+							<listitem><para>(2018.09.19.) Elkezdve</para></listitem>
+							<listitem><para>(2018.09.19.) Tervezett megoldás: számok nagyobb/kisebb összehasonlítása, mely érvényes művelet a StringNumberben, de nem az a ComplexStringNumberben</para></listitem>
+							<listitem><para>(???????????) StringNumber implementálva</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 				<listitem>
 					<para>
-						Állapot:
+						Fájlok:
 						<itemizedlist>
-							<listitem><para>servlet alap kódja megírva</para></listitem>
-							<listitem><para>LZW binfa kódja folyamatban</para></listitem>
+							<listitem><para>Liskov.java</para></listitem>
+							<listitem><para>StringNumber.java</para></listitem>
+							<listitem><para>ComplexStringNumber.java</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Feladat: gagyi</title>
+			<title>2. feladat: Szülő-gyerek</title>
 			<itemizedlist>
-				<listitem><para>Elkezdve: 2018.09.19. (labor előtt)</para></listitem>
-				<listitem>
-					<para>
-						Fájlok:
-						<itemizedlist>
-							<listitem><para>gagyi.java</para></listitem>
-						</itemizedlist>
-					</para>
-				</listitem>
 				<listitem>
 					<para>
 						Állapot:
 						<itemizedlist>
-							<listitem><para>használt osztály létrehozva</para></listitem>
-							<listitem><para>Integer.java tanulmányozása folyamatban</para></listitem>
+							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
+							<listitem><para>(2018.09.26.) Implementáció hibás, javítás alatt</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>Szulo.java</para></listitem>
+							<listitem><para>Gyerek.java</para></listitem>
+							<listitem><para>SZGYMain.java</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: Anti OO</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
+							<listitem><para>(2018.09.26.) C++ és Java implementáció elkezdve</para></listitem>
+							<listitem><para>(2018.09.26.) a jelenlegi BBP algoritmus implementáció a kért számjegy-számhoz túl lassú, optimalizáció szükséges</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>BBPTimer.java</para></listitem>
+							<listitem><para>BBPTimer.cpp</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megjegyzések:
+						<itemizedlist>
+							<listitem><para>a különböző nyelvek között használt implementáció (logikailag) meg kell, hogy egyezzen ahhoz, hogy a mérés reprezentatív legyen arra nézve, hogy mi maga a futási sebesség közötti különbség</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: Hello, Android!</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
+							<listitem><para>(2018.09.26.) Samu-Entropy leszedve githubról. Átnézés folyamatban.</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok: -
+						<!--<itemizedlist>
+							<listitem><para></para></listitem>
+							<listitem><para></para></listitem>
+						</itemizedlist>-->
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>5. feladat: Ciklomatikus komplexitás</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
+							<listitem><para>(2018.09.26.) használt képlet a wikipédián talált. Kiválasztott metódus elemzésre: helper.StringNumber.isGreaterThan()</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok: -
+						<!--<itemizedlist>
+							<listitem><para></para></listitem>
+							<listitem><para></para></listitem>
+						</itemizedlist>-->
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
+	<chapter>
+		<title>3. hét</title>
+		<section>
+			<title>1. feladat: Reverse engineering UML osztálydiagram</title>
 		</section>
 	</chapter>
 	<chapter>
