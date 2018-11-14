@@ -625,4 +625,110 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<chapter>
+		<title>8. hét</title>
+		<section>
+			<title>1. feladat: Port scan</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.13.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.13.) Befejezve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+					</para>
+					<para>
+						Ebben a példában a kivételkezelés szerepe eltér annak alapértelmezett feladatától. Míg alapesetben nem számítunk arra, hogy kivétel történik, az ténylegesen
+						"kivételes" esetben fordul elő hiba esetén, itt válogatási céllal van jelen - a
+						<programlisting language="java"><![CDATA[java.net.Socket socket = new java.net.Socket(args[0], i);]]></programlisting>
+						soron az inicializáláskor amennyiben az adott socket nem érhető el, kivételt emel a konstruktor.
+						Ha ez nem történik meg, onnan tudjuk hogy az elérés sikeres, így nyitva van a socket.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>2. feladat: AOP</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.13.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.13.) LZW binfa java-ban implementálva</para></listitem>
+						<listitem><para>(2018.11.13.) aspectj telepítve, .as fájl megírva</para></listitem>
+						<listitem>
+							<para>
+								(2018.11.13.) Ismeretlen okból akkor is ClassNotFoundExceptionnel leáll a program, ha a megfelelő jar fájlok benne vannak a classpathban.
+								Javításra szorul.
+							</para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>LZWBinfa.java</para></listitem>
+						<listitem><para>AOP.aj</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: Android Játék</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.07.) Elkezdve laboron</para></listitem>
+						<listitem><para>(2018.11.07.) Projekt létrehozva</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: Junit teszt</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.14.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.14.) Junit.jar telepítve</para></listitem>
+						<listitem><para>(2018.11.14.) teszt fájl létrehozva</para></listitem>
+						<listitem><para>(2018.11.14.) LZWBinfa osztály fordításában ismeretlen hiba, javítani.</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>LZWBinfa.java</para></listitem>
+						<listitem><para>JUnitTest.java</para></listitem>
+						<listitem><para>JUnitTestRunner.java</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>5. feladat: Összefoglaló</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.11.14.) Elkezdve</para></listitem>
+						<listitem><para>(2018.11.14.) Témaválasztás: android játék feladat</para></listitem>
+						<listitem><para>(2018.11.14.) Befejezve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>összefoglaló.docx</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
 </book>
