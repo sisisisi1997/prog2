@@ -731,4 +731,111 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<chapter>
+		<title>9. hét</title>
+		<section>
+			<title>1. feladat: MNIST</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.10.20.) Elkezdve</para></listitem>
+						<listitem><para>(2018.10.20.) Saját képek elkészítve teszteléshez (hetes, hármas számjegy, valamint egy random ábra)</para></listitem>
+						<listitem><para>(2018.10.21.) megfelelő modulok telepítése a pythonhoz (tensorflow, mathplotlib, setuptools)</para></listitem>
+						<listitem><para>(2018.10.21.) módosítások végzése a mnist.py-on, hogy felélesszem</para></listitem>
+						<listitem><para>(2018.10.21.) a mnist lefut, azonban nagy arányban téveszt - mélyebb ismeretek hiánya miatt a témában ezen nem tudok javítani</para></listitem>
+						<listitem><para>(2018.10.21.) Befejezve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>mnist.py</para></listitem>
+						<listitem><para>hetes.png és .xcf</para></listitem>
+						<listitem><para>hetes-kezi.png</para></listitem>
+						<listitem><para>harmas-kezi.png és .xcf</para></listitem>
+						<listitem><para>random.png és .xcf</para></listitem>
+						<listitem><para>pics/mnist.png</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>2. feladat: Deep MNIST</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.10.21.) Elkezdve</para></listitem>
+						<listitem><para>(2018.10.21.) Elakadás, hogyan értékelek ki képet a "deep" verzióban?</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>mnist_deep.py</para></listitem>
+						<listitem><para>pics/mnist_deep.png</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: CIFAR-10</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.10.21.) Elkezdve</para></listitem>
+						<listitem><para>(2018.10.21.) cifar10-es példa megkeresve a tensorflow repoban</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>cifar10.py</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: Android telefonra a TF objektum detektálója</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.10.21.) Elkezdve</para></listitem>
+						<listitem><para>(2018.10.21.) Hiányzó sdk/build-tools feltelepítése az android studiohoz</para></listitem>
+						<listitem><para>(2018.10.21.) Demo alkalmazások feltelepítése telefonra, kipróbálás</para></listitem>
+						<listitem><para>(2018.10.21.) Befejezve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>pics/TF_Android.jpeg</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>5. feladat: Összefoglaló</title>
+			<itemizedlist>
+				<listitem>
+					Állapot:
+					<itemizedlist>
+						<listitem><para>(2018.10.21.) Elkezdve</para></listitem>
+						<listitem><para>(2018.10.21.) Kiválasztott feladat: MNIST</para></listitem>
+						<listitem><para>(2018.10.21.) Általános leírás kész</para></listitem>
+						<listitem><para>(2018.10.21.) Tapasztalt hibák leírása kész</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>osszefoglalo.docx</para></listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
 </book>
