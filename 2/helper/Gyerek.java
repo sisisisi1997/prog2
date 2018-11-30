@@ -1,6 +1,6 @@
 package helper;
 
-public class Gyerek extends Szulo // valamilyen oknál fogva ezt nem találja pedig ugyanabban a package-ben vannak
+public class Gyerek extends Szulo
 {
 	public String toBeOverridden()
 	{

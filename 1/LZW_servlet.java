@@ -1,5 +1,9 @@
-import java.text.StringBuffer;
+package homokozo;
+
+//import java.text.StringBuffer;
+import javax.servlet.http.*;
 import javax.servlet.*;
+import java.io.*;
 
 public class LZW_servlet implements Servlet
 {
@@ -10,13 +14,18 @@ public class LZW_servlet implements Servlet
 		this.config = config;
 	}
 	
-	public void service(ServletRequest request, ServletResponse response)
+	public void service(ServletRequest request, ServletResponse response) throws java.io.IOException
 	{
 		response.setContentType("text/html");
 		
-		/* TODO: here goes the LZW code */
-		PrintWriter writer = result.getWriter();
-		writer.print(LZWBinTreeHandler.treeToHTML(LZWBinTreeHandler.buildTree("")));
+		String lzwString = request.getParameter("lzwstring");
+		
+		LZWBinfa tree = new LZWBinfa(lzwString);
+		
+		PrintWriter writer = response.getWriter();
+		writer.print("<html><head><title>LZW Binfa</title></head><body><pre>");
+		//writer.print(tree.printTree());
+		writer.println("fa helye</pre></body></html>");
 	}
 	
 	public void destroy()
@@ -34,7 +43,7 @@ public class LZW_servlet implements Servlet
 	}
 	
 	/* No need to expose this class, output will be HTML anyways */
-	private static class LZWBinTreeHandler
+	/*private static class LZWBinTreeHandler
 	{
 		public LZWBinTree buildTree(String source)
 		{
@@ -58,10 +67,10 @@ public class LZW_servlet implements Servlet
 			
 			// TODO: use HTML5 canvas
 		}
-	}
+	}*/
 	
 	/* No need to expose this class, output will be HTML anyways */
-	private static class LZWBinTree
+	/*private static class LZWBinTree
 	{
 		private LZWBinTree	left		= null,
 							right		= null,
@@ -93,13 +102,13 @@ public class LZW_servlet implements Servlet
 		public void setRight(LZWBinTree newRight)
 		{
 			this.right = newRight;
-		}
+		}*/
 		
 		/* returns:
 		 * - an LZWBinTree if appending stopped at a point in the middle of the tree
 		 * - null if it created a new branch
 		 */
-		public LZWBinTree append(boolean item)
+		/*public LZWBinTree append(boolean item)
 		{
 			if(appendPos != null)
 			{
@@ -110,5 +119,5 @@ public class LZW_servlet implements Servlet
 				
 			}
 		}
-	}
+	}*/
 }

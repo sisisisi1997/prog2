@@ -1,18 +1,17 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
+#include "png.h"
 
 int main(int argc, char* argv[])
 {
 	if(argc < 1)
 	{
-		cout << "Adja meg a képfájl nevét!" << endl;
+		std::cout << "Adja meg a képfájl nevét!" << std::endl;
 		return 1;
 	}
 	
-	string path = argv[0];
+	std::string path = argv[0];
 	
-	/*
-	 * TODO: libpng linkelése, hogy be tudja olvasni a képet amit feldolgozunk majd
-	 /
+	
 }

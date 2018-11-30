@@ -15,8 +15,15 @@ public class StringNumber
 	protected boolean sign;
 	protected String wholePart, fractionalPart;
 	
+	protected StringNumber() {}
+	
 	// TODO: strip leading zeroes in the whole part and trailing zeroes in the fractional part
 	public StringNumber(String source)
+	{
+		this.initFrom(source);
+	}
+	
+	protected final void initFrom(String source)
 	{
 		if(source == null || source.length() == 0)
 		{
@@ -76,9 +83,9 @@ public class StringNumber
 	
 	public StringNumber(boolean positiveSign, String wholePart, String fractionalPart)
 	{
-		if(StringNumber.isNumericHelper(wholePart) || !StringNumber.isNumericHelper(fractionalPart))
+		if(!StringNumber.isNumericHelper(wholePart) || !StringNumber.isNumericHelper(fractionalPart))
 		{
-			throw new IllegalArgumentException("Wrong input, sign must not be null and the whole and frictional parts must only contain digits.");
+			throw new IllegalArgumentException("Wrong input, the whole and fractional parts must only contain digits.");
 		}
 		
 		this.sign = positiveSign;
@@ -133,7 +140,7 @@ public class StringNumber
 	
 	public String toString()
 	{
-		return (this.sign ? '+' : '-') + wholePart + (fractionalPart == "0" ? "" : "." + fractionalPart);
+		return (this.sign ? "+" : "-") + wholePart + (fractionalPart.equals("0") ? "" : "." + fractionalPart);
 	}
 	
 	private static boolean isNumericHelper(String input)

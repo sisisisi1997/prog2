@@ -9,6 +9,14 @@
 			Ezen idő alatt mindkettő különböző befejezettségi állapotban lehet a feladatok feltöltésekor.
 		</para>
 		<para>a 3. héten a feladatok megoldásához használt laptop meghibásodott, így az akkori feladatok a 4. hetiek határidejéig lesznek pótolva</para>
+		<para>
+			Tutoráltak:
+			<itemizedlist>
+				<listitem><para>Nagy Márta</para></listitem>
+				<listitem><para>Tar Zolti</para></listitem>
+				<listitem><para>Tóth Norbert</para></listitem>
+			</itemizedlist>
+		</para>
 	</chapter>
 	<chapter>
 		<title>1. hét</title>
@@ -23,6 +31,7 @@
 							<listitem><para>Java kód kommentelve (kód megértésének demonstrálására)</para></listitem>
 							<listitem><para>Kód átültetve C++-ba (változtatások: random számok forrása a C 'rand()' függvény, azonban ez nem 0 és 1 közötti számokat ad, ez javítva (rand() / RAND_MAX alakban))</para></listitem>
 							<listitem><para>Befejezve</para></listitem>
+							<listitem><para>(2018.11.28.) Screenshot hozzáadva a futásról java és C++ nyelvű programról.</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -32,13 +41,15 @@
 						<itemizedlist>
 							<listitem><para>PolarGenerator.java</para></listitem>
 							<listitem><para>PolarGenerator.cpp</para></listitem>
+							<listitem><para>OOSzeml_CPP.png</para></listitem>
+							<listitem><para>OOSzeml_Java.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
 		<section>
-			<title>2. feladat: homokozó</title>
+			<title>2. feladat: Homokozó</title>
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -46,6 +57,8 @@
 						<itemizedlist>
 							<listitem><para>servlet alap kódja megírva</para></listitem>
 							<listitem><para>LZW binfa kódja folyamatban</para></listitem>
+							<listitem><para>(2018.11.29.) LZW binfa kódja befejezve</para></listitem>
+							<listitem><para>(2018.11.29.) Befejezve, fut</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -53,7 +66,9 @@
 					<para>
 						Fájlok:
 						<itemizedlist>
-							<listitem><para>LZW_servlet.java</para></listitem>
+							<listitem><para>homokozo/LZW_servlet.java</para></listitem>
+							<listitem><para>homokozo/LZWBinfa.java</para></listitem>
+							<listitem><para>homokozo.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -67,8 +82,10 @@
 						Állapot:
 						<itemizedlist>
 							<listitem><para>(2018.09.19.) Elkezdve</para></listitem>
-							<listitem><para>használt osztály létrehozva</para></listitem>
-							<listitem><para>Integer.java tanulmányozása folyamatban</para></listitem>
+							<listitem><para>(2018.19.19.) használt osztály létrehozva</para></listitem>
+							<listitem><para>(2018.19.19.) Integer.java tanulmányozása folyamatban</para></listitem>
+							<listitem><para>(2018.11.29.) Az Integer.java-ban található kód alapján a megfelelő értékhatárok meghatározva.</para></listitem>
+							<listitem><para>(2018.11.29.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -76,8 +93,23 @@
 					<para>
 						Fájlok:
 						<itemizedlist>
-							<listitem><para>gagyi.java</para></listitem>
+							<listitem><para>Gagyi.java</para></listitem>
+							<listitem><para>gagyi.png</para></listitem>
 						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Magyarázat: Java-ban a &lt;= és a &gt;= operátorok értéket hasonlítanak össze, azonban mivel az <code language="Java">Integer</code> nem primitív típus,
+						hanem objektum, ezért az == és != operátorok memóriacímet hasonlítanak össze. Emiatt előfordulhat, hogy két különböző példány,
+						melyek ugyanazzal az értékkel bírnak, igazra tesztelődnének a <code language="Java">while(x &gt;=t &amp;&amp; x &lt;= t &amp;&amp; x != t) {}</code>
+						ciklus fejében. Az, hogy egyetlen példányt, vagy különböző példányokat kapunk, az a Java <code language="Java">IntegerCache.low</code> és
+						<code language="Java">IntegerCache.high</code> értékétől függenek, eközött a két érték között (inklúzívan) az azonos értékű változók memóriaspórolás végett
+						azonos memóriacímre mutatnak, hacsaknem explicit új példányt hozunk létre.
+					</para>
+					<para>
+						Mivel az <code language="Java">int</code> típus primitív, ezért ezzel nem működik a "trükk", mindig értékösszehasonlítás történik - az Integerbe való wrapelés
+						kötelező elem, amennyiben ilyen viselkedést szeretnénk elérni.
 					</para>
 				</listitem>
 			</itemizedlist>
@@ -87,11 +119,11 @@
 			<itemizedlist>
 				<listitem>
 					<para>
-						Állapot: befejezve, a megoldás egy Java program, amely
+						Állapot:
 						<itemizedlist>
-							<listitem><para>bekér egy stringet</para></listitem>
-							<listitem><para>amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja</para></listitem>
-							<listitem><para>a stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában (amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna)</para></listitem>
+							<listitem><para>Elkezdve</para></listitem>
+							<listitem><para>Befejezve</para></listitem>
+							<listitem><para>(2018.11.29.) Jegyzőkönyv formához igazítva</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -100,6 +132,16 @@
 						Fájlok:
 						<itemizedlist>
 							<listitem><para>Yoda.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: egy java program, amely
+						<itemizedlist>
+							<listitem><para>bekér egy stringet</para></listitem>
+							<listitem><para>amennyiben a string tartalmazza a "foo" karaktersorozatot, az értékét null-ra állítja</para></listitem>
+							<listitem><para>a stringet a "bar" karaktersorozathoz hasonlítja "bar.equals(str)" formában (amennyiben str már null, az ellenkező sorrend NullPointerException-t dobna)</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -148,6 +190,10 @@
 							<listitem><para>(2018.09.19.) Elkezdve</para></listitem>
 							<listitem><para>(2018.09.19.) Tervezett megoldás: számok nagyobb/kisebb összehasonlítása, mely érvényes művelet a StringNumberben, de nem az a ComplexStringNumberben</para></listitem>
 							<listitem><para>(???????????) StringNumber implementálva</para></listitem>
+							<listitem><para>(2018.11.30.) ComplexStringNumber implementálva</para></listitem>
+							<listitem><para>(2018.11.30.) java implementáció befejezve, mely szándékosan exceptionnel leáll.</para></listitem>
+							<listitem><para>(2018.11.30.) C++ implementáció befejezve, mely szándékosan exceptionnel leáll.</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -156,9 +202,28 @@
 						Fájlok:
 						<itemizedlist>
 							<listitem><para>Liskov.java</para></listitem>
-							<listitem><para>StringNumber.java</para></listitem>
-							<listitem><para>ComplexStringNumber.java</para></listitem>
+							<listitem><para>helper/StringNumber.java</para></listitem>
+							<listitem><para>helper/ComplexStringNumber.java</para></listitem>
+							<listitem><para>Liskov.cpp</para></listitem>
+							<listitem><para>StringNumber.cpp</para></listitem>
+							<listitem><para>StringNumber.hpp</para></listitem>
+							<listitem><para>ComplexStringNumber.cpp</para></listitem>
+							<listitem><para>ComplexStringNumber.hpp</para></listitem>
+							<listitem><para>liskov_java.png</para></listitem>
+							<listitem><para>liskov_cpp.png</para></listitem>
 						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: Két osztály létrehozása, mely a számokat stringként kezeli. A szülőosztály racionális számokkal dolgozik, míg a gyermekosztály komplex számokkal.
+						Ebben az esetben a szülőosztályban definiálva vannak az <code language="Java">isGreaterThan(), isLessThan(), isEqualTo()</code> metódusok összehasonlításokhoz,
+						azonban a gyermekosztályban ezek közül az <code language="Java">isGreaterThan(), isLessThan()</code> nem értelmezhetőek matematikailag.
+					</para>
+					<para>
+						A hiba kijavítható lenne a tervezés megváltoztatásával: a gyermekosztályok feladat nem a szülő általánosítása, hanem annak specializálása. Mivel a komplex számok
+						általánosabbak ("superset of"), mint a racionális számok, ezért a komplex számokat kezelő osztálynak kéne a szülőnek lennie, a racionálisnak pedig a gyermeknek.
+						A szülő osztályban csak az <code language="Java">isEqualTo()</code> lenne definiálva, a másik kettő pedig csak a gyermekosztályban.
 					</para>
 				</listitem>
 			</itemizedlist>
@@ -172,6 +237,9 @@
 						<itemizedlist>
 							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
 							<listitem><para>(2018.09.26.) Implementáció hibás, javítás alatt</para></listitem>
+							<listitem><para>(2018.11.30.) Java implementáció kijavítva</para></listitem>
+							<listitem><para>(2018.11.30.) C++ implementáció megvalósítva</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -179,9 +247,13 @@
 					<para>
 						Fájlok:
 						<itemizedlist>
-							<listitem><para>Szulo.java</para></listitem>
-							<listitem><para>Gyerek.java</para></listitem>
+							<listitem><para>helper/Szulo.java</para></listitem>
+							<listitem><para>helper/Gyerek.java</para></listitem>
 							<listitem><para>SZGYMain.java</para></listitem>
+							<listitem><para>SZGY.cpp</para></listitem>
+							<listitem><para>SZGY_cpp.png</para></listitem>
+							<listitem><para>SZGY_java_casttal.png</para></listitem>
+							<listitem><para>SZGY_java_hiba.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -228,16 +300,19 @@
 						<itemizedlist>
 							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
 							<listitem><para>(2018.09.26.) Samu-Entropy leszedve githubról. Átnézés folyamatban.</para></listitem>
+							<listitem><para>(2018.11.30.) Projektek beimportálva android studioba.</para></listitem>
+							<listitem><para>(2018.11.30.) Projektek felélesztve.</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 				<listitem>
 					<para>
-						Fájlok: -
-						<!--<itemizedlist>
-							<listitem><para></para></listitem>
-							<listitem><para></para></listitem>
-						</itemizedlist>-->
+						Fájlok: samu_1.jpeg - samu_10.jpeg
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						
 					</para>
 				</listitem>
 			</itemizedlist>
@@ -251,16 +326,31 @@
 						<itemizedlist>
 							<listitem><para>(2018.09.26.) Elkezdve</para></listitem>
 							<listitem><para>(2018.09.26.) használt képlet a wikipédián talált. Kiválasztott metódus elemzésre: helper.StringNumber.isGreaterThan()</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 				<listitem>
 					<para>
-						Fájlok: -
-						<!--<itemizedlist>
-							<listitem><para></para></listitem>
-							<listitem><para></para></listitem>
-						</itemizedlist>-->
+						Fájlok: gráf.png
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás:
+						<para>
+							Gráf:
+							<itemizedlist>
+								<listitem><para>1: kiindulópont</para></listitem>
+								<listitem><para>2: elágazás - előjel vizsgálata</para></listitem>
+								<listitem><para>3: elágazás - egészrészek egyenlősége</para></listitem>
+								<listitem><para>8: ciklus - egészrész egyenlősége</para></listitem>
+								<listitem><para>5: elágazás - egészrész egyenlősége</para></listitem>
+								<listitem><para>4: ciklus - törtrész egyenlősége</para></listitem>
+								<listitem><para>6: elágazás - törtrész egyenlősége</para></listitem>
+								<listitem><para>7: végpont - visszatérés egy értékkel</para></listitem>
+							</itemizedlist>
+						</para>
 					</para>
 				</listitem>
 			</itemizedlist>
@@ -269,13 +359,162 @@
 	<chapter>
 		<title>3. hét</title>
 		<section>
-			<title>1. feladat: Reverse engineering UML osztálydiagram</title>
+			<title>2. feladat: Forward engineering UML osztálydiagram</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.09.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.09.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>forward.zargo</para></listitem>
+							<listitem><para>HeadPhone.h</para></listitem>
+							<listitem><para>HeadPhone.cpp</para></listitem>
+							<listitem><para>HeadPhoneManufacturer.h</para></listitem>
+							<listitem><para>HeadPhoneManufacturer.cpp</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: ArgoUML program segítségével készítettem két osztálydiagramot, amelyek leírják a HeadPhone és a HeadPhoneManufacturer osztályt.
+						Az osztályok tartalmaznak private elemeket, public gettereket ezekhez az elemekhez, és egy-egy konstruktort,
+						melyeket az ArgoUML az osztálydiagramok alapján generált.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: BPMN</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.09.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.09.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>bpmn.jpg</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: BPMN diagram feladatmegoldásról programozás laborra, melynek elemei a következők:
+						Kezdőesemény: közeledik a feladatok beadási határideje.
+						Tevékenység: egy feladat elvégzése.
+						Útválasztó: Van még hátra feladat?
+						Tevékenység: feladatok feltöltése githubra.
+						Befejező esemény: az óra során a feladatok bemutathatóak.
+						Az elemek olvashatósági okokból vannak leírva a jegyzőkönyvbe, a köztük lévő kapcsolatok csak a bpmn.jpg-ben találhatóak meg.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+	</chapter>
+	<chapter>
+		<title>4. hét</title>
+		<section> <!-- TODO: megcsinálni azért, valahogy... -->
+			<title>1. feladat: Encoding</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.03.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.03.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>MandelbrotHalmaz.java</para></listitem>
+							<listitem><para>MandelbrotHalmazNagyító.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: Az ubuntu terminál alapértelmezett karakterkódolása UTF-8, így nem okozott problémát a fájlnév továbbítása a javac felé parancssori argumentumként.
+						Amennyiben a karakterkódolással gond lett volna, meg lehetne változtatni az $LC_ALL és a $LANG környezeti változók beállításával.
+						Amennyiben a bemeneti fájl kódolását nem ismeri fel a javac, akkor a "javac -encoding encoding_name filename.java" paranccsal fordítható le a forráskód.
+						Ellenpélda az alapértelmezett beállításokkal való helyes működésre pl. a Windows XP command line, itt kifejtve:
+						https://stackoverflow.com/questions/5993979/error-compiling-java-file-with-special-characters-in-class-name
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: l33ts1c4</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.03.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.03.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>L334.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Megoldás: Bekérek egy bemenetet a terminálból, felvágom szóközök mentén szavakra.
+						Végigmegyek minden szón, és ha az szerepel a szótranszformációs hashmapben, akkor kicserélem egyben.
+						Azokon a szavakon, amelyek nem szerepeltek, betűnként megyek végig, és a betűtranszformációs hashmap segítségével kicserélem az érintett betűket egyesével.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>4. feladat: Full screen</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.10.) Elkezdve</para></listitem>
+							<listitem><para>(2018.10.10.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>Fullscreen.java</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+			</itemizedlist>
 		</section>
 	</chapter>
 	<chapter>
 		<title>5. hét</title>
 		<section>
-			<title>Feladat: JDK osztályok</title>
+			<title>1. feladat: JDK osztályok</title>
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -297,7 +536,7 @@
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Feladat: Másoló-mozgató szemantika</title>
+			<title>2. feladat: Másoló-mozgató szemantika</title>
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -319,7 +558,7 @@
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Feladat: Hibásan implementált RSA törése</title>
+			<title>3. feladat: Hibásan implementált RSA törése</title>
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -328,6 +567,8 @@
 							<listitem><para>(2018.10.16.) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.16.) RSA.java implementálva</para></listitem>
 							<listitem><para>(2018.10.16.) RSAToro.java - kódolás és dekódolás implementálva, törés maradt hátra</para></listitem>
+							<listitem><para>(2018.11.30.) Törés implementálva</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -337,6 +578,7 @@
 						<itemizedlist>
 							<listitem><para>RSA.java: a kulcspárokat generáló osztály.</para></listitem>
 							<listitem><para>RSAToro.java: a szöveget titkosító, majd feltörő osztály.</para></listitem>
+							<listitem><para>RSAtoro.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
