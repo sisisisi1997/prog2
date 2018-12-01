@@ -360,7 +360,7 @@
 			</itemizedlist>
 		</section>
 	</chapter>
-	<!-- 2 -->
+	<!-- 3 -->
 	<chapter>
 		<title>3. hét</title>
 		<!-- TODO: Argo UML telepítése és screenshot -->
@@ -393,6 +393,25 @@
 						Megoldás: ArgoUML program segítségével készítettem két osztálydiagramot, amelyek leírják a HeadPhone és a HeadPhoneManufacturer osztályt.
 						Az osztályok tartalmaznak private elemeket, public gettereket ezekhez az elemekhez, és egy-egy konstruktort,
 						melyeket az ArgoUML az osztálydiagramok alapján generált.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>3. feladat: Egy esettan</title>
+			<itemizedlist>
+				<listitem>
+					<para>
+						Állapot:
+						<itemizedlist>
+							<listitem><para>(2018.10.09.) Elkezdve</para></listitem>
+							<listitem><para>(2018.12.01. reggel) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok: minden a productinventory mappán belül
 					</para>
 				</listitem>
 			</itemizedlist>
