@@ -34,6 +34,7 @@ import tempfile
 from tensorflow.examples.tutorials.mnist import input_data
 
 import tensorflow as tf
+import matplotlib.pyplot
 
 FLAGS = None
 
@@ -121,6 +122,12 @@ def bias_variable(shape):
   initial = tf.constant(0.1, shape=shape)
   return tf.Variable(initial)
 
+filename = "harmas-kezi"
+
+def readimg():
+    file = tf.read_file(filename + ".png")
+    img = tf.image.decode_png(file, 1)
+    return img
 
 def main(_):
   # Import data
@@ -155,7 +162,7 @@ def main(_):
 
   with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    for i in range(1000):
+    for i in range(500):
       batch = mnist.train.next_batch(50)
       if i % 100 == 0:
         train_accuracy = accuracy.eval(feed_dict={
@@ -165,6 +172,34 @@ def main(_):
 
     print('test accuracy %g' % accuracy.eval(feed_dict={
         x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
+    print("-- A MNIST 42. tesztkepenek felismerese, mutatom a szamot, a tovabblepeshez csukd be az ablakat")
+  
+    img = mnist.test.images[42]
+    image = img
+
+    matplotlib.pyplot.imshow(image.reshape(28, 28), cmap=matplotlib.pyplot.cm.binary)
+    matplotlib.pyplot.savefig("4.png")  
+    matplotlib.pyplot.show()
+
+    classification = sess.run(tf.argmax(y_conv, 1), feed_dict={x: [image], keep_prob: 1.0})
+
+    print("-- Ezt a halozat ennek ismeri fel: ", classification[0])
+    print("----------------------------------------------------------")
+
+    print("-- A sajat kezi szamjegyem felismerese, mutatom a szamot, a tovabblepeshez csukd be az ablakat")
+
+    img = readimg()
+    image = img.eval()
+    image = image.reshape(28*28)
+
+    matplotlib.pyplot.imshow(image.reshape(28, 28), cmap=matplotlib.pyplot.cm.binary)
+    matplotlib.pyplot.savefig(filename + "_out.png")  
+    matplotlib.pyplot.show()
+
+    classification = sess.run(tf.argmax(y_conv, 1), feed_dict={x: [image], keep_prob: 1.0})
+
+    print("-- Ezt a halozat ennek ismeri fel: ", classification[0])
+    print("----------------------------------------------------------")
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()

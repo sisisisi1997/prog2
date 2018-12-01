@@ -519,10 +519,9 @@
 			</itemizedlist>
 		</section>
 	</chapter>
-	<!-- 2 -->
+	<!-- 3 -->
 	<chapter>
 		<title>5. hét</title>
-		<!-- befejezetlen -->
 		<section>
 			<title>1. feladat: JDK osztályok</title>
 			<itemizedlist>
@@ -532,6 +531,8 @@
 						<itemizedlist>
 							<listitem><para>(2018.10.17., labor előtt) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.17., labor előtt) boost linkelése a forrásfájllal sikertelen, keresés után: ABI verzió probléma van</para></listitem>
+							<listitem><para>(2018.12.01. reggel) boost linkelve, bejárás implementálva</para></listitem>
+							<listitem><para>(2018.12.01. reggel) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -922,10 +923,9 @@
 			</itemizedlist>
 		</section>
 	</chapter>
-	<!-- 2 -->
+	<!-- 3 -->
 	<chapter>
 		<title>8. hét</title>
-		<!-- befejezetlen: nincs felélesztve -->
 		<section>
 			<title>1. feladat: Port scan</title>
 			<itemizedlist>
@@ -934,6 +934,14 @@
 					<itemizedlist>
 						<listitem><para>(2018.11.13.) Elkezdve</para></listitem>
 						<listitem><para>(2018.11.13.) Befejezve</para></listitem>
+						<listitem><para>(2018.12.01. hajnal) felélesztve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>KapuSzkenner.java</para></listitem>
+						<listitem><para>screenshots/szkenner.png</para></listitem>
 					</itemizedlist>
 				</listitem>
 				<listitem>
@@ -1034,7 +1042,7 @@
 			</itemizedlist>
 		</section>
 	</chapter>
-	<!-- 2 -->
+	<!-- 3 -->
 	<chapter>
 		<title>9. hét</title>
 		<section>
@@ -1064,7 +1072,6 @@
 				</listitem>
 			</itemizedlist>
 		</section>
-		<!-- befejezetlen -->
 		<section>
 			<title>2. feladat: Deep MNIST</title>
 			<itemizedlist>
@@ -1073,6 +1080,7 @@
 					<itemizedlist>
 						<listitem><para>(2018.10.21.) Elkezdve</para></listitem>
 						<listitem><para>(2018.10.21.) Elakadás, hogyan értékelek ki képet a "deep" verzióban?</para></listitem>
+						<listitem><para>(2018.12.01. hajnal) Befejezve</para></listitem>
 					</itemizedlist>
 				</listitem>
 				<listitem>
@@ -1080,6 +1088,7 @@
 					<itemizedlist>
 						<listitem><para>mnist_deep.py</para></listitem>
 						<listitem><para>pics/mnist_deep.png</para></listitem>
+						<listitem><para>pics/mnist_deep_2.png</para></listitem>
 					</itemizedlist>
 				</listitem>
 			</itemizedlist>

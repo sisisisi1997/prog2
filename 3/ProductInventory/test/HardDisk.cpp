@@ -1,19 +1,9 @@
 #include <iostream>
 #include <string>
 
-class HardDisk : public Product
-{
-	public:
-		int GetCurrentPrice() const;
-		
-		std::string GetType() const { return "HardDisk"; }
-		char GetCharCode() const { return CharCode; }
-	private:
-		int speedRPM;
-		static const CharCode = 'h';
-}
+#include "HardDisk.h"
 
-int HardDisk::GetCurrentPrice()
+int HardDisk::GetCurrentPrice() const
 {
 	int ageInDays = GetAge();
 	if(ageInDays < 30)
@@ -28,4 +18,13 @@ int HardDisk::GetCurrentPrice()
 	{
 		return (int)(initialPrice * 0.8);
 	}
+}
+
+HardDisk::HardDisk(string name, int price, Date acq, int speed)
+	: name(name),
+	initialPrice(price),
+	dateOfAcquisition(acq),
+	speedRMP(speed)
+{
+	
 }
