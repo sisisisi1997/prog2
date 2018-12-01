@@ -1,3 +1,11 @@
+/****************************************/
+/* Benedek Zoltán-Levendovszky Tihamér: */
+/* Szoftverfejlesztés C++ nyelven       */
+/* c. könyv példaprogramjai             */
+/* SZAK Kiadó 2007                      */
+/****************************************/
+
+// File: ProductFactory.h
 #ifndef PRODUCTFACTORY_H
 #define PRODUCTFACTORY_H
 
@@ -7,12 +15,13 @@
 class ProductFactory
 {
 	static ProductFactory* instance;
-	public:
-		virtual ~ProductFactory() {}
-		virtual Product* CreateProduct(char typeCode) const = 0;
-		static ProductFactory* GetInstance();
-		static void Init(ProductFactory* pf);
-		Product* ReadAndCreateProduct(std::istream& is); 
+	//ProductFactory() {}
+public:
+	virtual ~ProductFactory() {}
+	virtual Product* CreateProduct(char typeCode) const = 0;
+	static ProductFactory* GetInstance();
+	static void Init(ProductFactory* pf);
+	Product* ReadAndCreateProduct(std::istream& is); 
 };
 
-#endif
+#endif /* PRODUCTFACTORY_H */

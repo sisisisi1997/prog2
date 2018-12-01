@@ -1,3 +1,10 @@
+/****************************************/
+/* Benedek Zoltán-Levendovszky Tihamér: */
+/* Szoftverfejlesztés C++ nyelven       */
+/* c. könyv példaprogramjai             */
+/* SZAK Kiadó 2007                      */
+/****************************************/
+
 #include <stdexcept>
 #include "ProductFactory.h"
 

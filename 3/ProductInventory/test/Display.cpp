@@ -1,5 +1,24 @@
-#include <iostream>
+/****************************************/
+/* Benedek Zoltán-Levendovszky Tihamér: */
+/* Szoftverfejlesztés C++ nyelven       */
+/* c. könyv példaprogramjai             */
+/* SZAK Kiadó 2007                      */
+/****************************************/
+
 #include "Display.h"
+
+//const char* Product::type = "Display";
+
+Display::Display()
+{
+}
+
+Display::Display(std::string name, int initialPrice, time_t dateOfAcquisition,
+				 int inchWidth, int inchHeight):
+ Product(name, initialPrice, dateOfAcquisition),
+ inchWidth(inchWidth), inchHeight(inchHeight)
+{
+}
 
 void Display::printParams(std::ostream& os) const
 {
@@ -8,23 +27,14 @@ void Display::printParams(std::ostream& os) const
 	os << ", " << "InchHeight: " << inchHeight;
 }
 
+void Display::loadParamsFromStream(std::istream& is)
+{
+	Product::loadParamsFromStream(is);
+	is >> inchWidth >> inchHeight;
+}
+
 void Display::writeParamsToStream(std::ostream& os) const
 {
 	Product::writeParamsToStream(os);
 	os << ' ' << inchWidth << ' ' << inchHeight;
-}
-
-void Display::loadParamsFromStream(std::istream& is) const
-{
-	Product::loadParamsFromStream(is);
-	is >> inchWidth; is >> inchHeight;
-}
-
-Display::Display(std::string name, int price, Date acq, int width, int height)
-	: inchWidth(width),
-	inchHeight(height)
-{
-	this->name = name;
-	this->initialPrice = price;
-	this->dateOfAcquisition = acq;
 }

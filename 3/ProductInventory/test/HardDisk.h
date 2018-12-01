@@ -1,22 +1,31 @@
+/****************************************/
+/* Benedek Zoltán-Levendovszky Tihamér: */
+/* Szoftverfejlesztés C++ nyelven       */
+/* c. könyv példaprogramjai             */
+/* SZAK Kiadó 2007                      */
+/****************************************/
+
 #ifndef HARDDISK_H
 #define HARDDISK_H
 
 #include "../lib/Product.h"
-#include <string>
 
 class HardDisk : public Product
 {
-	public:
-		HardDisk(std::string name, int price, Date acq, int speed);
-		HardDisk();
-		
-		int GetCurrentPrice() const;
-		
-		std::string GetType() const { return "HardDisk"; }
-		char GetCharCode() const { return CharCode; }
-	private:
-		int speedRPM;
-		static const char CharCode = 'h';
+	int speedRPM;
+protected:
+	void printParams(std::ostream& os) const;
+	void loadParamsFromStream(std::istream& is);
+	void writeParamsToStream(std::ostream& os) const;
+public:
+	HardDisk();
+	HardDisk(std::string name, int initialPrice, time_t dateOfAcquisition,
+		int rpm);
+	std::string GetType() const { return "HardDisk"; }
+	char GetCharCode() const { return CharCode; }
+	int GetSpeedRPM() { return speedRPM; }
+	static const char CharCode = 'h';
+	int GetCurrentPrice() const;
 };
 
-#endif
+#endif /* HARDDISK_H */

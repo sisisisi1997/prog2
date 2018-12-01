@@ -1,52 +1,75 @@
-#include <iostream>
-#include <fstream>
+/****************************************/
+/* Benedek Zoltán-Levendovszky Tihamér: */
+/* Szoftverfejlesztés C++ nyelven       */
+/* c. könyv példaprogramjai             */
+/* SZAK Kiadó 2007                      */
+/****************************************/
 
+#include <fstream>
+#include <locale>
 #include "../lib/ProductInventory.h"
 #include "../lib/ProductFactory.h"
-#include "../lib/Date.h"
 #include "ComputerProductFactory.h"
-#include "Display.h"
-#include "HardDisk.h"
+#include "../lib/Date.h"
 
 using namespace std;
 
-void readInvFromFileTest(ProductInventory& inv);
-void writeInvToFileTest(ProductInventory& inv);
+void ReadInvFromFileTest(ProductInventory& inv);
+void WriteInvToFileTest(ProductInventory& inv);
 
-int main()
+int main(int argc, char* argv[])
 {
-	ProductFactory::Init(new ComputerProductFactory());
+	try
+	{
 	
-	Date date = Date();
-	ProductInventory inv1;
-	inv1.AddProduct(new Display("TFT", 30000, date, 13, 12));
-	inv1.AddProduct(new HardDisk("WD", 25000, date, 7500));
-	inv1.PrintProducts(cout);
-	writeInvToFileTest(inv1);
-	
-	cout << "Press any key to continue...";
-	cin.get();
-	cout << endl;
-	
-	ProductInventory inv2;
-	readInvFromFileTest(inv2);
-	writeInvToFileTest(inv2);
-	
-	cout << "done";
-	cin.get();
+		ProductInventory inv;
+		ProductFactory::Init(new ComputerProductFactory());
+
+		
+
+		ReadInvFromFileTest(inv);
+		WriteInvToFileTest(inv);
+		cout << endl;
+
+		//Várunk billentyû leütésre
+		cin.get();
+
+		return 0;
+	}
+	catch(const std::exception& e)
+	{
+		cerr << "There was an error: " << endl;
+		cerr << e.what() << endl;
+	}
+	catch(...)
+	{
+		cout << "Unexpected error occured." << endl;
+	}
 }
 
-void readInvFromFileTest(ProductInventory& inv)
+void ReadInvFromFileTest(ProductInventory& inv) 
 {
-	ifstream is("data.txt");
-	inv.ReadInventory(is);
-	cout << "Read products: " << std::endl;
+	ifstream fs("../TestData/computerproducts.txt");
+	if (!fs)
+	{
+		cerr << "Error opening file." << endl;
+		return;
+	}
+	inv.ReadInventory(fs);
+	cout << "The content of computerproducts.txt is:" << endl;
 	inv.PrintProducts(cout);
 	cout << endl;
 }
 
-void writeInvToFileTest(ProductInventory& inv)
+void WriteInvToFileTest(ProductInventory& inv) 
 {
-	ofstream os("data.txt");
-	inv.WriteInventory(os);
+	ofstream fs("../TestData/computerproducts_out.txt");
+	if (!fs)
+	{
+		cerr << "Error opening file." << endl;
+		return;
+	}
+	inv.WriteInventory(fs);
+	cout << "The content of the inventory has been " 
+		"written to computerproducts_out.txt." << endl;
 }
