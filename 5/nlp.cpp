@@ -85,11 +85,11 @@ double Perceptron::sigmoid (double x)
 	return 1.0/ ( 1.0 + exp ( -x ) );
 }
 
-double Perceptron::operator() (double image[])
+double* Perceptron::operator() (double image[])
 {
 	units[0] = image;
 	
-	    for ( int i {1}; i < n_layers; ++i )
+	    /*for ( int i {1}; i < n_layers; ++i )
 	      {
 	
 	        #pragma omp parallel for
@@ -107,7 +107,13 @@ double Perceptron::operator() (double image[])
 	          }
 	      }
 	
-	    return sigmoid ( units[n_layers - 1][0] );
+	    return sigmoid ( units[n_layers - 1][0] );*/
+	for(int i = 0; i < n_units[0]; ++ i)
+	{
+		units[0][i] = sigmoid(image[i]);
+	}
+	
+	return units[0];
 }
 
 void Perceptron::learning ( double image [], double q, double prev_q )

@@ -20,7 +20,7 @@ class Perceptron
 	  double sigmoid ( double x );
 	
 	
-	  double operator() ( double image [] );
+	  double* operator() ( double image [] );
 	
 	  void learning ( double image [], double q, double prev_q );
 	

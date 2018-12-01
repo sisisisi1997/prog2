@@ -18,6 +18,7 @@
 			</itemizedlist>
 		</para>
 	</chapter>
+	<!-- 5 -->
 	<chapter>
 		<title>1. hét</title>
 		<section>
@@ -178,6 +179,7 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 3 -->
 	<chapter>
 		<title>2. hét</title>
 		<section>
@@ -259,6 +261,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>3. feladat: Anti OO</title>
 			<itemizedlist>
@@ -291,6 +294,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>4. feladat: Hello, Android!</title>
 			<itemizedlist>
@@ -356,8 +360,10 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 2 -->
 	<chapter>
 		<title>3. hét</title>
+		<!-- TODO: Argo UML telepítése és screenshot -->
 		<section>
 			<title>2. feladat: Forward engineering UML osztálydiagram</title>
 			<itemizedlist>
@@ -425,9 +431,11 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 3 -->
 	<chapter>
 		<title>4. hét</title>
-		<section> <!-- TODO: megcsinálni azért, valahogy... -->
+		<!-- TODO: megcsinálni azért, valahogy... -->
+		<section>
 			<title>1. feladat: Encoding</title>
 			<itemizedlist>
 				<listitem>
@@ -511,8 +519,10 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 2 -->
 	<chapter>
 		<title>5. hét</title>
+		<!-- befejezetlen -->
 		<section>
 			<title>1. feladat: JDK osztályok</title>
 			<itemizedlist>
@@ -535,6 +545,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>2. feladat: Másoló-mozgató szemantika</title>
 			<itemizedlist>
@@ -597,6 +608,7 @@
 							<listitem><para>(2018.10.17., labor előtt) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.17., labor előtt) valtarg.cpp a képfájl nevét bekéri</para></listitem>
 							<listitem><para>(2018.10.17., labor előtt) libpng++ library feltelepítve, hogy tudja kezelni a képeket, linkelés megvalósítása hátravan</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -604,13 +616,18 @@
 					<para>
 						Fájlok:
 						<itemizedlist>
-							<listitem><para>nlp.hpp: a Perceptron osztály fájlja</para></listitem>
+							<listitem><para>nlp.hpp: a Perceptron osztály header fájlja</para></listitem>
+							<listitem><para>nlp.cpp: a Perceptron osztály implementációja</para></listitem>
 							<listitem><para>valtarg.cpp: az fájl ami felhasználja a Perceptront</para></listitem>
+							<listitem><para>mandelbrot.png</para></listitem>
+							<listitem><para>redsigmoid.png</para></listitem>
+							<listitem><para>screenshots/valtarg.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>Feladat: Összefoglaló</title>
 			<itemizedlist>
@@ -638,10 +655,11 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 3 -->
 	<chapter>
 		<title>6. hét</title>
 		<section>
-			<title>Feladat: gengszterek rendezése</title>
+			<title>1. feladat: gengszterek rendezése</title>
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -649,6 +667,7 @@
 						<itemizedlist>
 							<listitem><para>(2018.10.23.) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.23.) Megoldva</para></listitem>
+							<listitem><para>(2018.11.30.) Példaprogram, mely hasonló alakot használ a forráshoz, elkészítve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -678,11 +697,22 @@
 							<listitem><para>(2018.10.24., labor előtt) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.24., labor előtt) Linkelt előadás végigolvasva</para></listitem>
 							<listitem><para>(2018.10.24., labor előtt) Elakadás: mi pontosan a feladat?</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
+						</itemizedlist>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Fájlok:
+						<itemizedlist>
+							<listitem><para>CustomAlloc.cpp</para></listitem>
+							<listitem><para>screenshots/customalloc.png</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>Feladat: STL map érték szerinti rendezése</title>
 			<itemizedlist>
@@ -716,6 +746,8 @@
 						<itemizedlist>
 							<listitem><para>(2018.10.23.) Elkezdve</para></listitem>
 							<listitem><para>(2018.10.23.) Leírás rész megcsinálva</para></listitem>
+							<listitem><para>(2018.11.30.) Felélesztve</para></listitem>
+							<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 						</itemizedlist>
 					</para>
 				</listitem>
@@ -730,11 +762,12 @@
 						időben biztosított, hogy a megfelelő paramétereket veszi át és a megfelelő típussal tér vissza - hiszen ha nem így lenne, nem is ezt az interface-t
 						implementálnánk, pedig a rendező függvény ilyen interface-t implementáló osztályokat vár bemenetnek.
 						Magának az összehasonlításnak az elvégzéséhez a C++-hoz hasonlóan negatív, 0, és pozitív értékeket használ, ezzel az összetett adattípusainkat egyszerű
-						egész számokká transzformálva, melyeket már tud rendezni a megadott rendezőalgoritmus.
+						számokká transzformálva, melyeket már tud rendezni a megadott rendezőalgoritmus.
 					</para>
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>Feladat: Összefoglaló</title>
 			<itemizedlist>
@@ -757,6 +790,7 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 3 -->
 	<chapter>
 		<title>7. hét</title>
 		<section>
@@ -768,16 +802,23 @@
 						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
 						<listitem><para>(2018.11.07.) Szükséges fájl leszedve githubról</para></listitem>
 						<listitem><para>(2018.11.07.) Java FX-et nem találja a rendszert, telepíteni kell.</para></listitem>
+						<listitem><para>(2018.11.30.) Java FX telepítve, sikeres fordítás.</para></listitem>
+						<listitem><para>(2018.11.30.) Javítás: a treeview-ban nem mutatja az egész elérési utat innentől, csak a legutóbbi elemét a pathnak. Ez segít átláthatóbbá tenni a dolgokat, ha nagyon mélyre megyünk.</para></listitem>
+						<listitem><para>(2018.11.30.) Befejezve</para></listitem>
 					</itemizedlist>
 				</listitem>
 				<listitem>
 					Fájlok:
 					<itemizedlist>
 						<listitem><para>ActivityEditor.java: a future tevékenység editor.</para></listitem>
+						<listitem><para>minden egyéb a future/ útvonalon</para></listitem>
+						<listitem><para>screenshots/future-1.png</para></listitem>
+						<listitem><para>screenshots/future-2.png</para></listitem>
 					</itemizedlist>
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen: nincs felélesztve -->
 		<section>
 			<title>2. feladat: OOCWC Boost ASIO hálózatkezelése</title>
 			<itemizedlist>
@@ -809,14 +850,19 @@
 					<itemizedlist>
 						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
 						<listitem><para>(2018.11.07.) Megoldva</para></listitem>
+						<listitem><para>(2018.12.01. hajnal) felélesztve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>minden a SamuCam-master mappában</para></listitem>
+						<listitem><para>screenshots/samu.png</para></listitem>
 					</itemizedlist>
 				</listitem>
 				<listitem>
 					<para>
-						Megoldás:
-					</para>
-					<para>
-						A VideoCapture konstruktora egy stringet fogad, amely lehet egy eszköz eléréséhez annak indexe (0, 1, ...).
+						Megoldás: A VideoCapture konstruktora egy stringet fogad, amely lehet egy eszköz eléréséhez annak indexe (0, 1, ...).
 						Miután megnyitjuk a video streamet és beállítjuk a tulajdonságait (képméret, etc), frame-enként tudunk olvasni, feldolgozni,
 						majd ugorni a következő frame-re.
 					</para>
@@ -831,6 +877,14 @@
 					<itemizedlist>
 						<listitem><para>(2018.11.07.) Elkezdve</para></listitem>
 						<listitem><para>(2018.11.07.) Megoldva</para></listitem>
+						<listitem><para>(2018.12.01. hajnal) felélesztve</para></listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem>
+					Fájlok:
+					<itemizedlist>
+						<listitem><para>minden a brainb mappában</para></listitem>
+						<listitem><para>screenshots/brainb.png</para></listitem>
 					</itemizedlist>
 				</listitem>
 				<listitem>
@@ -848,6 +902,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>5. feladat: OSM térképre rajzolása (alternatíva elkészítése)</title>
 			<itemizedlist>
@@ -867,8 +922,10 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 2 -->
 	<chapter>
 		<title>8. hét</title>
+		<!-- befejezetlen: nincs felélesztve -->
 		<section>
 			<title>1. feladat: Port scan</title>
 			<itemizedlist>
@@ -893,6 +950,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>2. feladat: AOP</title>
 			<itemizedlist>
@@ -927,10 +985,13 @@
 					<itemizedlist>
 						<listitem><para>(2018.11.07.) Elkezdve laboron</para></listitem>
 						<listitem><para>(2018.11.07.) Projekt létrehozva</para></listitem>
+						<listitem><para>(2018.11.28.) Befejezve</para></listitem>
+						<listitem><para>(2018.11.30.) Forráskód hozzáadva a repóhoz</para></listitem>
 					</itemizedlist>
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>4. feladat: Junit teszt</title>
 			<itemizedlist>
@@ -973,6 +1034,7 @@
 			</itemizedlist>
 		</section>
 	</chapter>
+	<!-- 2 -->
 	<chapter>
 		<title>9. hét</title>
 		<section>
@@ -1002,6 +1064,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>2. feladat: Deep MNIST</title>
 			<itemizedlist>
@@ -1021,6 +1084,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>3. feladat: CIFAR-10</title>
 			<itemizedlist>
@@ -1059,6 +1123,7 @@
 				</listitem>
 			</itemizedlist>
 		</section>
+		<!-- befejezetlen -->
 		<section>
 			<title>5. feladat: Összefoglaló</title>
 			<itemizedlist>
